@@ -1,0 +1,23 @@
+.scroll {
+  @include size(40px);
+
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+  transition: all 0.3s;
+
+  &:hover {
+    color: var(--darkblue);
+    border-color: var(--darkblue);
+  }
+
+  &__down {
+  }
+}

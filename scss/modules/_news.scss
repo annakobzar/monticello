@@ -1,0 +1,121 @@
+.news {
+  background: url(../images/bg-news.jpg) center center no-repeat;
+  padding: 180px 0 140px;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__main-title {
+    color: #fff;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 95px;
+    position: relative;
+
+    &::before {
+      @include size(100px, 1px);
+      @include pos($t: -40px, $l: 50%);
+
+      content: "";
+      background-color: #fff;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__post {
+    max-width: 370px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 15px;
+    transition: all 0.3s;
+    overflow: hidden;
+    background-color: #fff;
+
+    &:hover {
+      //   transform: scale(1.02);
+      // box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    &:hover .news__img {
+      // transform: scale(1.07);
+    }
+  }
+
+  &__link {
+    // overflow: hidden;
+    min-height: 240px;
+    display: block;
+  }
+
+  &__img {
+    min-width: 100%;
+    height: 100%;
+
+    // transition: all 0.5s;
+  }
+
+  &__body {
+    background-color: #fff;
+    padding: 30px 30px 30px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: var(--darkblue);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-family: $font-os;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--blue);
+    margin-bottom: 35px;
+    flex-grow: 1;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__author {
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+  &__author-pic {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &__info-wrap {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__author-name {
+    color: var(--darkblue);
+    text-transform: uppercase;
+  }
+
+  &__date {
+    font-size: 14px;
+    color: #55b7ff;
+  }
+}

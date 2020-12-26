@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    @include size(40px);
+    font-size: 15px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: all 0.3s;
+
+    &:hover {
+      border-color: var(--darkblue);
+      .social__icon {
+        color: var(--darkblue);
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+  }
+}

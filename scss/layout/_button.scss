@@ -1,0 +1,47 @@
+.button {
+  @include size(220px, 60px);
+
+  display: block;
+  font-family: $font;
+  font-size: 16px;
+  color: var(--darkblue);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  line-height: 60px;
+  padding: 0 30px;
+  border: 1px solid #2c4058;
+  border-top: 0;
+  border-bottom: 0;
+  overflow: hidden;
+  position: relative;
+
+  transition: all 0.3s;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #2c4058;
+    transition: all 0.3s ease;
+  }
+
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+  &:hover:before {
+    left: 100%;
+  }
+  &:hover:after {
+    left: -100%;
+  }
+}

@@ -1,0 +1,60 @@
+.footer {
+  background: url(../images/bg-footer.jpg) center center no-repeat;
+  background-size: cover;
+  height: 800px;
+  text-align: center; //!!!
+  position: relative;
+  padding-top: 1px;
+}
+
+.contact {
+  @include size(770px, 450px);
+  @include pos($t: -50%, $l: 225px);
+
+  background-color: #fff;
+  padding: 90px 60px 80px;
+  transform: translateY(50%);
+
+  &__title {
+    font-size: 44px;
+    font-weight: 400;
+    position: relative;
+    color: var(--darkblue);
+    margin-bottom: 55px;
+
+    &::before {
+      @include size(100px, 1px);
+      @include pos($t: -40px, $l: 50%);
+
+      content: "";
+      background-color: var(--darkblue);
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.form {
+  &__field {
+  }
+
+  &__input {
+    background-color: transparent;
+    font: 400 17px $font;
+    color: #000;
+    width: 500px;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+    border-bottom: 1px solid #000;
+
+    &:focus {
+      border-left: 5px solid var(--blue);
+      border-bottom: 2px solid #000;
+      font-weight: 700;
+    }
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}

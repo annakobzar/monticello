@@ -1,0 +1,36 @@
+.header {
+  background: url(../images/bg-header.jpg) center center no-repeat;
+
+  &__wrap {
+    height: 100vh;
+    padding: 50px 0;
+    background: url(../images/bg-header.jpg) center center no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 5.4px;
+  }
+}

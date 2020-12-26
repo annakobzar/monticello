@@ -1,0 +1,16 @@
+#map {
+  @include size(100%, 700px);
+}
+
+.map {
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
