@@ -564,7 +564,7 @@ body {
 
 .contact {
   width: 770px;
-  height: 450px;
+  min-height: 450px;
   position: absolute;
   top: -50%;
   left: 225px;

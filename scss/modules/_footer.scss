@@ -8,7 +8,9 @@
 }
 
 .contact {
-  @include size(770px, 450px);
+  // @include size(770px, 450px);
+  width: 770px;
+  min-height: 450px;
   @include pos($t: -50%, $l: 225px);
 
   background-color: #fff;
