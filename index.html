@@ -117,7 +117,7 @@
             <div class="col-md-5">
               <div class="about__content">
                 <p class="about__subtitle">One World</p>
-                <h2 class="subtitle about__title--left">Trade Center</h2>
+                <h2 class="about__title--left">Trade Center</h2>
                 <p class="about__text">
                   Increasing prosperity in our lives can be accomplished by
                   having the right frame of mind. The truth is, our thoughts are
@@ -141,7 +141,7 @@
             <div class="col-md-5">
               <div class="about__content">
                 <p class="about__subtitle">International</p>
-                <h2 class="subtitle about__title--left">Commerce Centre</h2>
+                <h2 class="about__title--left">Commerce Centre</h2>
                 <p class="about__text">
                   Successful businesses have many things in common, today we’ll
                   look at the big ‘R’ of recognition and how a digital
@@ -173,7 +173,7 @@
 
     <section class="news" id="news">
       <div class="container news__wrap">
-        <h2 class="news__main-title">Latest news</h2>
+        <h2 class="news__main-title subtitle">Latest news</h2>
 
         <div class="slider__arrows"></div>
 
@@ -358,49 +358,59 @@
           <h2 class="gallery__title subtitle">Gallery</h2>
           <div class="row gallery__images">
             <div class="col-6">
-              <a
-                class="photo"
-                data-fancybox="gallery"
-                href="images/gallery/1.jpg"
-                data-caption="My very beautiful image, take a look!"
-                ><img src="images/gallery/1.jpg"
-              /></a>
+              <div class="gallery__item">
+                <a
+                  class="photo"
+                  data-fancybox="gallery"
+                  href="images/gallery/1.jpg"
+                  data-caption="My very beautiful image, take a look!"
+                  ><img src="images/gallery/1.jpg"
+                /></a>
+              </div>
             </div>
             <div class="col-6">
               <div class="row">
-                <div class="col-6">
-                  <a
-                    class="photo"
-                    data-fancybox="gallery"
-                    href="images/gallery/2-big.jpg"
-                    ><img src="images/gallery/2.jpg"
-                  /></a>
+                <div class="col-6 gallery__images--s">
+                  <div class="gallery__item">
+                    <a
+                      class="photo"
+                      data-fancybox="gallery"
+                      href="images/gallery/2-big.jpg"
+                      ><img src="images/gallery/2.jpg"
+                    /></a>
+                  </div>
                 </div>
                 <div class="col-6">
-                  <a
-                    class="photo"
-                    data-fancybox="gallery"
-                    href="images/gallery/3-big.jpg"
-                    ><img src="images/gallery/3.jpg"
-                  /></a>
+                  <div class="gallery__item">
+                    <a
+                      class="photo"
+                      data-fancybox="gallery"
+                      href="images/gallery/3-big.jpg"
+                      ><img src="images/gallery/3.jpg"
+                    /></a>
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-6">
-                  <a
-                    class="photo"
-                    data-fancybox="gallery"
-                    href="images/gallery/4-big.jpg"
-                    ><img src="images/gallery/4.jpg"
-                  /></a>
+                  <div class="gallery__item">
+                    <a
+                      class="photo"
+                      data-fancybox="gallery"
+                      href="images/gallery/4-big.jpg"
+                      ><img src="images/gallery/4.jpg"
+                    /></a>
+                  </div>
                 </div>
                 <div class="col-6">
-                  <a
-                    class="photo"
-                    data-fancybox="gallery"
-                    href="images/gallery/5-big.jpg"
-                    ><img src="images/gallery/5.jpg"
-                  /></a>
+                  <div class="gallery__item">
+                    <a
+                      class="photo"
+                      data-fancybox="gallery"
+                      href="images/gallery/5-big.jpg"
+                      ><img src="images/gallery/5.jpg"
+                    /></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -418,42 +428,43 @@
         <h2 class="contact__title subtitle">Get in touch</h2>
 
         <div class="contact__info">
-          <div class="contact__block">
-            <i class="icon-marker contact__icon"></i>
-            <a
-              href="https://www.google.com/maps/place/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.6976701,-74.2598758,10z/data=!3m1!4b1!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728"
-              class="contact__link"
-              target="_blank"
-              >91 Nolan Extensions Suite 670</a
-            >
-          </div>
+          <div class="contact__blocks">
+            <div class="contact__block">
+              <i class="icon-marker contact__icon"></i>
+              <a
+                href="https://www.google.com/maps/place/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.6976701,-74.2598758,10z/data=!3m1!4b1!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728"
+                class="contact__link"
+                target="_blank"
+                >91 Nolan Extensions Suite 670</a
+              >
+            </div>
 
-          <div class="contact__block">
-            <i class="icon-phone contact__icon"></i>
-            <a href="tel:+001 356-868-2454" class="contact__link"
-              >+001 356-868-2454</a
-            >
-          </div>
+            <div class="contact__block">
+              <i class="icon-phone contact__icon"></i>
+              <a href="tel:+001 356-868-2454" class="contact__link"
+                >+001 356-868-2454</a
+              >
+            </div>
 
-          <div class="contact__block">
-            <i class="icon-address contact__icon"></i>
-            <a href="mailto:gahuy93@gmail.com" class="contact__link"
-              >gahuy93@gmail.com</a
-            >
-          </div>
+            <div class="contact__block">
+              <i class="icon-address contact__icon"></i>
+              <a href="mailto:gahuy93@gmail.com" class="contact__link"
+                >gahuy93@gmail.com</a
+              >
+            </div>
 
-          <div class="contact__block">
-            <i class="icon-clock contact__icon"></i>
-            <p class="contact__link">From 07:05AM to 19:30PM</p>
+            <div class="contact__block">
+              <i class="icon-clock contact__icon"></i>
+              <span class="contact__link">From 07:05AM to 19:30PM</span>
+            </div>
           </div>
-
           <form action="#" class="form">
             <div class="form__field">
               <input
                 class="form__input"
                 type="text"
                 name="name"
-                placeholder="Your name..."
+                placeholder="Your name"
                 required
               />
             </div>
@@ -463,13 +474,47 @@
                 class="form__input"
                 type="email"
                 name="email"
-                placeholder="Your e-mail..."
+                placeholder="E-mail"
                 required
               />
             </div>
 
-            <button class="button">Subscribe</button>
+            <button class="button form__btn">Submit</button>
           </form>
+        </div>
+      </div>
+      <div class="footer__wrap">
+        <div class="footer__menu">
+          <a href="#" class="logo">
+            <i class="icon-logo footer__logo"></i>
+          </a>
+          <ul class="social footer__social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="icon-facebook social__icon"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="icon-twitter social__icon"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <i class="icon-instagram social__icon"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <p class="footer__rights">Copyrights © 2017 Monticello Group</p>
+          <span class="footer__line">|</span>
+          <p class="footer__author">
+            Made with
+            <i class="icon-heart footer__icon"></i>
+            by
+            <a href="#" class="footer__link">Ga Huy</a>
+          </p>
         </div>
       </div>
     </footer>

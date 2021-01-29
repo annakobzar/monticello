@@ -1,21 +1,66 @@
 .footer {
   background: url(../images/bg-footer.jpg) center center no-repeat;
   background-size: cover;
-  height: 800px;
-  text-align: center; //!!!
+  min-height: 525px;
   position: relative;
   padding-top: 1px;
+
+  &__wrap {
+    max-width: 770px;
+    margin: 0 auto;
+    margin-top: 300px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__footer {
+    font-size: 60px;
+  }
+
+  &__info {
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__rights {
+    margin-right: 20px;
+  }
+
+  &__author {
+    margin-left: 20px;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--darkblue);
+    }
+  }
+
+  &__icon {
+  }
 }
 
 .contact {
-  // @include size(770px, 450px);
-  width: 770px;
+  background: url(../images/bg-contact.png) center bottom no-repeat;
+  min-width: 770px;
   min-height: 450px;
-  @include pos($t: -50%, $l: 225px);
+  @include pos($t: -50%, $l: 50%);
 
   background-color: #fff;
   padding: 90px 60px 80px;
-  transform: translateY(50%);
+  transform: translateX(-50%);
+  text-align: center;
+  margin: 0 auto;
 
   &__title {
     font-size: 44px;
@@ -23,40 +68,67 @@
     position: relative;
     color: var(--darkblue);
     margin-bottom: 55px;
+  }
 
-    &::before {
-      @include size(100px, 1px);
-      @include pos($t: -40px, $l: 50%);
+  &__info {
+    display: flex;
+  }
 
-      content: "";
-      background-color: var(--darkblue);
-      transform: translateX(-50%);
+  &__blocks {
+    text-align: left;
+    margin-right: 50px;
+  }
+
+  &__block {
+    margin-bottom: 40px;
+  }
+
+  &__icon {
+    color: #7e5aff;
+    margin-right: 10px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--darkblue);
+    font-size: 18px;
+    font-weight: 300;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #7e5aff;
     }
   }
 }
 
 .form {
+  position: relative;
+
   &__field {
   }
 
   &__input {
     background-color: transparent;
-    font: 400 17px $font;
-    color: #000;
-    width: 500px;
-    padding: 15px 25px;
-    margin-bottom: 15px;
+    font: 300 18px $font;
+    color: #a5aab0;
+    width: 300px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
     transition: all 0.3s;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #a5aab0;
 
     &:focus {
-      border-left: 5px solid var(--blue);
-      border-bottom: 2px solid #000;
-      font-weight: 700;
+      border-bottom: 2px solid var(--blue);
+      color: var(--blue);
     }
 
     &::placeholder {
-      color: #fff;
+      color: #a5aab0;
     }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
   }
 }

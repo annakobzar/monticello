@@ -27,6 +27,7 @@
       font-size: 34px;
       text-align: left;
       margin-bottom: 35px;
+      text-transform: uppercase;
     }
   }
 
@@ -36,8 +37,8 @@
     position: relative;
 
     &::before {
-      @include size(630px, 470px);
-      @include pos($t: -40px, $l: -215px, $z: -1);
+      @include size(490px, 470px);
+      @include pos($t: -70px, $r: 260px, $z: -1);
 
       content: "";
       background-color: #55b7ff;
@@ -45,10 +46,10 @@
 
     &--right {
       &::before {
-        @include pos($t: -40px, $r: -215px, $z: -1);
+        @include pos($t: -70px, $l: 260px, $z: -1);
 
         background-color: #7e5aff;
-        left: auto;
+        right: auto;
       }
     }
   }

@@ -241,15 +241,12 @@ function initMap() {
 			appendDots: $('.slider__dots'),
 			slidesToShow: 3,
 			slidesToScroll: 2,
-			// infinite: false,
 			speed: 4000,
-			// centerMode: true,
-			// initialSlide: 4,
-			autoplay: true,
-			// autoplaySpeed: 500,
-			// pauseOnHover: false,
-			// fade: true,
-			// swipe: false,
+			
+			// autoplay: true,
+			autoplaySpeed: 4000,
+			pauseOnHover: false,
+			
 			responsive: [
 			  {
 				breakpoint: 560,

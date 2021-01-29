@@ -10,26 +10,53 @@
     font-size: 44px;
     font-weight: 400;
     position: relative;
-
-    &::before {
-      @include size(100px, 1px);
-      @include pos($t: -40px, $l: 50%);
-
-      content: "";
-      background-color: var(--darkblue);
-      transform: translateX(-50%);
-    }
   }
 
   &__images {
     margin-bottom: 60px;
+
+    &--s {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item {
+    margin-right: -20px;
+    margin-bottom: -10px;
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+
+    &::before {
+      @include size(100%);
+
+      position: absolute;
+      content: "";
+
+      background: url(../images/360.png) center center no-repeat;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s;
+    }
+
+    &:hover.gallery__item {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__item a {
+    display: block;
+    min-height: 100%;
+    width: 100%;
   }
 
   &__btn {
     margin: 0 auto;
 
     &::after {
-      bottom: 1px;
+      // bottom: 1px;
     }
   }
 }

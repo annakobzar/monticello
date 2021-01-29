@@ -2,4 +2,13 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 44px;
+
+  &::before {
+    @include size(100px, 1px);
+    @include pos($t: -40px, $l: 50%);
+
+    content: "";
+    background-color: var(--darkblue);
+    transform: translateX(-50%);
+  }
 }
